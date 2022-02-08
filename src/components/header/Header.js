@@ -12,8 +12,8 @@ const Header = ({
       <Image className="image-size"></Image>
       <div className="App">
         <div className="App-header">
-            <h2 style={{padding : '30px'}}>Place your Bid(1/4 step)</h2>
-        </div>  
+            <h2 style={{padding : '30px'}}>{className}</h2>
+        </div>
       </div>
     </div>
   );

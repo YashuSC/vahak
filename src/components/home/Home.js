@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Box, Button, InputLabel, MenuItem, Select, TextField } from '@material-ui/core';
 import './home.css'
+import Header from "../header/Header";
  
 class Home extends Component {
   render() {
     return (
       <div>
+        <Header className={'Place your Bid(1/4 step)'}/>
         <form method="post">
             <div class="elem-group" style={{marginTop: '38px'}}>
               <TextField id="outlined-basic" label="Source Location *" variant="outlined" />&nbsp;
