@@ -1,54 +1,31 @@
 import React, { Component } from "react";
-import { Box, TextField } from '@material-ui/core';
+import { Box, Button, InputLabel, MenuItem, Select, TextField } from '@material-ui/core';
 import './home.css'
  
 class Home extends Component {
   render() {
     return (
       <div>
-         <Box
-            component="form"
-            sx={{
-              '& .MuiTextField-root': { m: 1, width: '25ch' },
-            }}
-            noValidate
-            autoComplete="off"
-          >
-        <div className="row">
-          <div className="col">
-            <div className="center">
-              <TextField
-                required
-                id="outlined-required"
-                label="Required"
-                defaultValue="vahak"
-              />&nbsp;
-              <TextField
-                required
-                id="outlined-disabled"
-                label="Disabled"
-                defaultValue="Hello World"
-              />
+        <form method="post">
+            <div class="elem-group" style={{marginTop: '38px'}}>
+              <TextField id="outlined-basic" label="Source Location *" variant="outlined" />&nbsp;
+              <TextField id="outlined-basic" label="Destination *" variant="outlined" />&nbsp;&nbsp;
             </div>
-          </div>
-        <div className="col">
-          <div className="center">
-            <TextField
-              required
-              id="outlined-required"
-              label="Required"
-              defaultValue="vahak"
-            />&nbsp;
-            <TextField
-              required
-              id="outlined-disabled"
-              label="Disabled"
-              defaultValue="Hello World"
-            />
-          </div>
-        </div>
-        </div>
-        </Box>
+            <div class="elem-group" >
+              <InputLabel htmlFor="grouped-select">Select Car Type *</InputLabel>
+              <Select style={{width: '100%'}} defaultValue="" id="grouped-select" label="Select Car Type *">
+                <MenuItem value="hatchback">HatchBack</MenuItem>
+                <MenuItem value="sedan">Sedan</MenuItem>
+                <MenuItem value="suv">SUV</MenuItem>
+              </Select>&nbsp;
+            </div>
+            <div class="elem-group" >
+            <TextField style={{width: '100%'}} id="outlined-basic" label="Number of Travellers *" variant="outlined" />&nbsp;
+            </div>
+            <div class="elem-group" >
+              <Button style={{background: '#0b204a', color: '#fff'}} className="button">Enter Bid Details</Button>
+            </div>
+          </form>
       </div>
     );
   }
