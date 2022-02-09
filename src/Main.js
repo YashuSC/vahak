@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import {
-      Route,
-      NavLink,
-      HashRouter,
       Routes
     } from "react-router-dom";
 import Home from "./components/home/Home";    
