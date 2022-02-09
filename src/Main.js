@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {
+      HashRouter,
       Routes
     } from "react-router-dom";
 import Home from "./components/home/Home";    
