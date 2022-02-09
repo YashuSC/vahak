@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, InputLabel, MenuItem, Select, TextField } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
 import Header from "../header/Header";
  
 class JourneyDetails extends Component {
